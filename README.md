@@ -1,3 +1,3 @@
 # CourseRoad
 
-Platform for learning to program
+Learning platform for learning how to program
