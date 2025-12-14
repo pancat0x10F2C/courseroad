@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        // Target modern JavaScript
+        "target": "ES2022",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "module": "esnext",
+        "moduleResolution": "bundler",
+
+        // Enable strict type checking
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+
+        // Module resolution
+        "allowJs": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
+
+        // React/Next.js specific
+        "jsx": "preserve",
+        "noEmit": true,
+        "incremental": true,
+
+        // Performance
+        "assumeChangesOnlyAffectDirectDependencies": true,
+
+        // Plugins
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+
+        // Path mapping
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        "src/types/**/*.ts"
+    ],
+    "exclude": ["node_modules", ".ui"]
+}
