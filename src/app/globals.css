@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@config "../../tailwind.config.ts";
+
+@theme {
+    --font-family-sans: var(--font-sans);
+    --font-family-mono: var(--font-mono);
+}
